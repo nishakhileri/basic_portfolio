@@ -1,0 +1,174 @@
+:root{
+    --teal: #031634;
+    --cobalt: #033649;
+    --turquoise: #066464;
+    --biege: #CEB280;
+    --gold: #EADDCC;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--teal);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+nav{
+    font-size: 80%;
+    padding: 1rem;
+    background-color: var(--cobalt);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--biege);
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.button{
+    background-color: orangered;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover{
+    color: white;
+    background: linear-gradient(145deg, rgba(247,106,82,1) 26%, rgba(222,120,66,1) 36%, rgba(240,86,71,1) 47% );
+}
+
+@media (min-width: 500px){
+    nav li:first-child{
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+}
+
+.gradient{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.intro{
+    padding: 4rem 1rem 5rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.name span{
+    display: block;
+    color: var(--gold);
+    font-size: 4rem;
+}
+
+.profile{
+    padding: 1rem 0;
+}
+
+.intro h2{
+    font-size: 3rem;
+    font-weight: normal ;
+}
+
+.experience-header{
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 200px;
+    padding: 1rem;
+}
+
+#experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.my_pic{
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.my_pic img{
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+#experience ul{
+    font-size: 1.2rem;
+    max-width: 400px;
+    border: solid 2px white;
+    border-radius: 5px;
+    background-color: var(--turquoise);
+    padding: 1rem;
+}
+
+#experience li{
+    padding: 1rem;
+    list-style-type: none;
+}
+
+#experience a{
+    color: white;
+}
+
+.section-color{
+    background-color: var(--turquoise);
+}
+
+#Hire{
+    background-color: var(--turquoise);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#Hire p:last-child{
+    margin-top: 3rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 0;
+}
